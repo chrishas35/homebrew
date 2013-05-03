@@ -7,6 +7,7 @@ end
 
 execute homebrew_go do
   not_if { File.exist? '/usr/local/bin/brew' }
+  user WS_USER
 end
 
 package 'git' do
